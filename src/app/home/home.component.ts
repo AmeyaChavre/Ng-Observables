@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  	interval(period:1000).subscribe()
   }
 
 }
