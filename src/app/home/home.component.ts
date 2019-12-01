@@ -8,6 +8,8 @@ import { interval } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
 
+  private firstObsSubscription: Subscription
+
   constructor() { }
 
   ngOnInit() {
