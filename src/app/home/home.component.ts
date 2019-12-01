@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   	interval(period:1000).subscribe(next: count => {
-  		
+  		console.log(count);
   	})
   }
 
