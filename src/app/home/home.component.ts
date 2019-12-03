@@ -8,7 +8,7 @@ import { interval, Subscription } from 'rxjs';
 })
 export class HomeComponent implements OnInit,OnDestroy {
 
-  private firstObsSubscription: Subscription
+  private firstObsSubscription: Subscription;
 
   constructor() { }
 
