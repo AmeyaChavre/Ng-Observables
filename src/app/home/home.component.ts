@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit,OnDestroy {
 
   ngOnInit() {
   	//this.firstObsSubscription = interval(1000).subscribe(count => {
-  		console.log(count);
+  		//console.log(count);
   	});
   }
 
