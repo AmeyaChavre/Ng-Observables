@@ -21,6 +21,7 @@ export class HomeComponent implements OnInit,OnDestroy {
   		let count = 0;
   		setInterval( () => {
   			observer.next(count);
+  			count++;
   		}, 1000);
   	});
   }
