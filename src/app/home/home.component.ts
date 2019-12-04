@@ -24,6 +24,8 @@ export class HomeComponent implements OnInit,OnDestroy {
   			count++;
   		}, 1000);
   	});
+
+  	customIntervalObservable.subscribe();
   }
 
   ngOnDestroy(): void {
