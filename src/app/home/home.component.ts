@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit,OnDestroy {
   	const customIntervalObservable = Observable.create(observer => {
   		setInterval( () => {
 
-  		});
+  		}, 1000);
   	});
   }
 
