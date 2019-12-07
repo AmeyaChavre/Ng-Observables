@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit,OnDestroy {
   		setInterval( () => {
   			observer.next(count);
   			if(count > 3){
-  				
+  				observer.error(new Error())
   			}
   			count++;
   		}, 1000);
