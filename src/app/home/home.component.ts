@@ -21,6 +21,9 @@ export class HomeComponent implements OnInit,OnDestroy {
   		let count = 0;
   		setInterval( () => {
   			observer.next(count);
+  			if (count == 2){
+  				observer.complete();
+  			}
   			if(count > 3){
   				observer.error(new Error('Error has occured more than 4 times.'));
   			}
@@ -32,6 +35,7 @@ export class HomeComponent implements OnInit,OnDestroy {
   		console.log(data);
   	}, error => {
   		console.log(error);
+  		alert(error.message);
   	});
   }
 
